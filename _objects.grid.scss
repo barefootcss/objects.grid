@@ -16,27 +16,10 @@
 
 .#{$bare-ns}grid {
 	@extend %bare-cf;
-	margin-left: bareRem(-$bare-sp-s);
+	margin-left: bareRem(-$bare-sp-m);
 
 	> .#{$bare-ns}grid__item {
 		float: left;
-		padding-left: bareRem($bare-sp-s);
+		padding-left: bareRem($bare-sp-m);
 	}
-}
-
-/**
- * @media: Increase the gutters. 
- */
-
-@media (min-width: bareEm($bare-bp-s)) {
-
-	.#{$bare-ns}grid {
-		margin-left: bareRem(-$bare-sp-m);
-
-		> .#{$bare-ns}grid__item {
-			float: left;
-			padding-left: bareRem($bare-sp-m);
-		}
-	}	
-
 }
