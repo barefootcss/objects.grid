@@ -18,7 +18,7 @@
 	@extend %bare-cf;
 	margin-left: bareRem(-$bare-sp-s);
 
-	> .#{$bare-ns}.grid__item {
+	> .#{$bare-ns}grid__item {
 		float: left;
 		padding-left: bareRem($bare-sp-s);
 	}
@@ -33,7 +33,7 @@
 	.#{$bare-ns}grid {
 		margin-left: bareRem(-$bare-sp-m);
 
-		> .#{$bare-ns}.grid__item {
+		> .#{$bare-ns}grid__item {
 			float: left;
 			padding-left: bareRem($bare-sp-m);
 		}
