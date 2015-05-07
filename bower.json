@@ -1,0 +1,23 @@
+{
+  "name": "bare-grid",
+  "version": "0.1.0",
+  "authors": [
+    "Eric Harms <barefoot.css@gmail.com>"
+  ],
+  "description": "The grid object arranges content using a grid system.",
+  "main": "_objects.grid.scss",
+  "keywords": [
+    "barefoot",
+    "oocss",
+    "css",
+    "framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/barefootcss/objects.grid",
+  "dependencies": {
+    "bare-defaults": "~0.1.0",
+    "bare-box-sizing": "~0.1.0",
+    "bare-clearfix": "~0.1.0",    
+  }
+}
+  
