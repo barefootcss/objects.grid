@@ -1,25 +1,104 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+// 
+// Features:
+// 
+
+$bare-grid--xs: 					false !default;
+$bare-grid--s: 						false !default;
+$bare-grid--l: 						false !default;
+$bare-grid--xl: 					false !default;
+
 /* 
    #grid
    ========================================================================== */
 
 /**
- * The grid object arranges content using a grid system.
+ * The grid object is used to create a fluid grid.
  *
  * Usage:
  *
- * <div class="grid">
- *     <div class="grid__item w-1-3"></div>
- *     <div class="grid__item w-1-3"></div>
- *     <div class="grid__item w-1-3"></div>
+ * <div class="o-grid">
+ * 
+ *     <div class="o-grid__item"></div>
+ *     <div class="o-grid__item"></div>
+ *     <div class="o-grid__item"></div>
+ *
  * </div>
  */
-
-.#{$bare-ns}grid {
+ 
+.o-grid {
 	@extend %bare-cf;
 	margin-left: bareRem(-$bare-sp-m);
+}
 
-	> .#{$bare-ns}grid__item {
+	.o-grid__item {
 		float: left;
 		padding-left: bareRem($bare-sp-m);
 	}
+	
+// 
+// #grid--xs
+// ========================================================================== 
+
+@if ($bare-grid--xs == true) {
+
+	.o-grid--xs {
+		margin-left: bareRem(-$bare-sp-xs);
+		
+		> .o-grid__item {
+			padding-left: bareRem(-$bare-sp-xs);
+		}
+	}
+	
+}
+	
+// 
+// #grid--s
+// ========================================================================== 
+
+@if ($bare-grid--s == true) {
+
+	.o-grid--s {
+		margin-left: bareRem(-$bare-sp-s);
+		
+		> .o-grid__item {
+			padding-left: bareRem(-$bare-sp-s);
+		}
+	}
+	
+}
+
+// 
+// #grid--l
+// ========================================================================== 
+
+@if ($bare-grid--l == true) {
+
+	.o-grid--l {
+		margin-left: bareRem(-$bare-sp-l);
+		
+		> .o-grid__item {
+			padding-left: bareRem(-$bare-sp-l);
+		}
+	}
+	
+}
+
+// 
+// #grid--xl
+// ========================================================================== 
+
+@if ($bare-grid--xl == true) {
+
+	.o-grid--s {
+		margin-left: bareRem(-$bare-sp-xl);
+		
+		> .o-grid__item {
+			padding-left: bareRem(-$bare-sp-xl);
+		}
+	}
+	
 }
