@@ -102,3 +102,19 @@ $bare-grid--xl: 					false !default;
 	}
 	
 }
+
+// 
+// #grid--flush
+// ========================================================================== 
+
+@if ($bare-grid--flush == true) {
+
+	.o-grid--flush {
+		margin-left: 0;
+		
+		> .o-grid__item {
+			padding-left: 0;
+		}
+	}
+	
+}
